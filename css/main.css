@@ -4,19 +4,21 @@
 
 /* 상단 */
 #header {
+  position: fixed;
   width: 100%;
-  height: 120px;
+  height: 100px;
+  background-color: #fff;
 }
 
 #header_in {
   width: 1400px;
-  height: 120px;
+  height: 100px;
   margin: 0 auto;
 }
 
 #header_in .logo {
   float: left;
-  margin: 45px 0 0 40px;
+  margin: 40px 0 0 40px;
 }
 
 #header_in .nav {
@@ -26,7 +28,7 @@
 }
 
 #header_in .nav ul {
-  height: 120px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +45,7 @@
   margin-right: 20px;
 }
 #header_in .info ul {
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -111,6 +113,8 @@
   height: 4300px;
 }
 
+/* 전시 영역 */
+
 #content .poster ul {
   display: flex;
   justify-content: space-evenly;
@@ -153,9 +157,343 @@
   font-weight: bold;
 }
 
+/* 소장품 영역 */
+
+#collection {
+  width: 100%;
+  height: 1300px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+#collection h1 {
+  margin-left: 300px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.antique_art {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.antique_art h2 {
+  float: left;
+  clear: left;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.antique_art a {
+  float: right;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.antique_art ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 1300px;
+}
+
+.antique_art img {
+  height: 500px;
+}
+
+.contemporary_art {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.contemporary_art h2 {
+  float: left;
+  clear: left;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contemporary_art a {
+  float: right;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contemporary_art ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 1300px;
+}
+
+.contemporary_art img {
+  height: 500px;
+}
+
+/* 베너 영역 */
+
+#benner {
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+}
+
+#benner img {
+  width: 100%;
+}
+
+.benner_btns {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 180px;
+}
+
+.benner_btns ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.benner_btns li {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 프로그램, 공지사항 영역 */
+#con_b {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1500px;
+  height: 500px;
+}
+
+#program {
+  float: left;
+  width: 700px;
+}
+
+#program h1 {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#program a {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#program img {
+  width: 700px;
+  margin-top: 30px;
+}
+
+#program p {
+  float: left;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#notice {
+  float: left;
+  width: 700px;
+  margin-left: 100px;
+}
+
+#notice h1 {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#notice a {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#notice ul {
+  float: left;
+  clear: left;
+  margin-top: 30px;
+}
+
+#notice li {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#notice li:first-child {
+  margin-top: none;
+}
+
+#map {
+  width: 1500px;
+  height: 700px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+#road {
+  float: left;
+  width: 700px;
+  height: 600px;
+}
+
+#road h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#road iframe {
+  margin-top: 50px;
+}
+
+#in_map {
+  float: left;
+  width: 700px;
+  height: 600px;
+  margin-left: 100px;
+}
+
+#in_map h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#in_map img {
+  margin-top: 50px;
+  width: 700px;
+  height: 420px;
+}
+
 /* 하단 */
 #footer {
   width: 100%;
   height: 250px;
   background-color: #000;
+}
+
+#footer_in {
+  width: 1700px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+#footer .logo {
+  float: left;
+  padding-top: 100px;
+}
+
+#footer .logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#footer .adress {
+  float: left;
+  width: 400px;
+  padding-left: 50px;
+}
+
+#footer .adress li {
+  margin-top: 6%;
+  color: #999;
+  font-weight: bold;
+}
+
+#footer .adress li a {
+  color: #999;
+}
+
+#footer .q_mn {
+  float: left;
+  margin: 20px 0 0 400px;
+  width: 410px;
+  height: 170px;
+}
+
+#footer .q_mn1 {
+  float: left;
+  padding-right: 8%;
+}
+
+#footer .q_mn1 li {
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+#footer .q_mn1 li a {
+  color: #999;
+}
+
+#footer .q_mn2 {
+  float: left;
+  padding-right: 8%;
+}
+
+#footer .q_mn2 li {
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+#footer .q_mn2 li a {
+  color: #999;
+}
+
+#footer .q_mn3 {
+  float: left;
+}
+
+#footer .q_mn3 li {
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+#footer .q_mn3 li a {
+  color: #999;
+}
+
+#footer .copy {
+  float: left;
+  margin-left: 400px;
+}
+
+#footer .copy p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+#footer .family {
+  float: right;
+  display: table;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+#footer .family p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
 }
