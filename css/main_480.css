@@ -4,51 +4,59 @@
 
 /* 상단 */
 #header {
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: #fff;
 }
 
 #header_in {
-  width: 1400px;
+  width: 100%;
   height: 100px;
-  margin: 0 auto;
 }
 
 #header_in .logo {
-  float: left;
-  margin: 40px 0 0 40px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+
+#header_in .logo img {
+  width: 20%;
 }
 
 #header_in .nav {
   float: left;
-  width: 550px;
-  margin-left: 300px;
+  width: 100%;
+  margin: 0;
 }
 
 #header_in .nav ul {
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 #header_in .nav a {
-  font-size: 18px;
+  font-size: 3vw;
   font-weight: bold;
 }
 
 #header_in .info {
-  float: right;
-  width: 170px;
+  position: absolute;
+  left: 65%;
+  top: 5%;
+  width: 30%;
+  height: 100px;
   margin-right: 20px;
 }
 #header_in .info ul {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #header_in .info li {
@@ -56,29 +64,35 @@
   height: 35px;
   text-align: center;
   line-height: 35px;
-  border: 2px solid#000;
+  border: 0px solid#000;
   border-radius: 20px;
 }
 
 #header_in .info a {
+  font-size: 12px;
   font-weight: bold;
 }
 
 /* 메인 */
 #main {
   width: 100%;
-  height: 1000px;
-  padding-top: 200px;
+  height: 400px;
+  padding: 0;
 }
 
 #main_img {
-  width: 1460px;
-  margin: 0 auto;
+  width: 100%;
 }
+
+#main_img img {
+  width: 100%;
+}
+
 #main .main_info {
+  display: none;
   float: left;
-  width: 1000px;
-  margin: 110px 0 0 250px;
+  width: 100%;
+  margin: 0;
 }
 
 #main .main_info ul {
@@ -87,14 +101,16 @@
 }
 
 #main .main_info li {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 #main .main_info img {
   vertical-align: top;
+  width: 12px;
 }
 #main .sns {
+  display: none;
   float: right;
   margin: 100px 260px 0 0;
   width: 100px;
@@ -111,18 +127,26 @@
 /* 콘텐츠 */
 #content {
   width: 100%;
-  height: 4300px;
+  height: 2500px;
 }
 
 /* 전시 영역 */
 
 #content .poster ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+#content .poster li:nth-child(2) {
+  display: none;
+}
+
+#content .poster li:nth-child(3) {
+  display: none;
 }
 
 #content .poster img {
-  height: 700px;
+  height: 500px;
 }
 
 #content .poster p {
@@ -133,6 +157,7 @@
 }
 
 #content .poster_btns {
+  display: none;
   margin: 0 auto;
   padding-top: 100px;
   width: 180px;
@@ -149,7 +174,7 @@
 #content .pos_see {
   float: right;
   position: relative;
-  top: -20px;
+  top: 50px;
   left: -200px;
 }
 
@@ -162,63 +187,77 @@
 
 #collection {
   width: 100%;
-  height: 1300px;
-  margin: 0 auto;
-  margin-top: 130px;
+  height: 500px;
+  margin-top: 200px;
 }
 
 #collection h1 {
-  margin-left: 300px;
-  font-size: 40px;
+  margin-left: 30px;
+  font-size: 8vw;
   font-weight: bold;
 }
 
 .antique_art {
-  margin: 0 auto;
-  width: 1300px;
+  float: left;
+  margin: 0;
+  width: 50%;
+  text-align: center;
 }
 
 .antique_art h2 {
   float: left;
   clear: left;
   padding-top: 60px;
-  font-size: 20px;
+  margin-left: 30px;
+  font-size: 4.1vw;
   font-weight: bold;
 }
 
 .antique_art a {
-  float: right;
+  display: none;
+  float: left;
   padding-top: 60px;
-  font-size: 20px;
+  font-size: 4.1vw;
   font-weight: bold;
 }
 
 .antique_art ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 40px;
-  width: 1300px;
+  width: 100%;
+}
+
+.antique_art li:nth-child(2) {
+  display: none;
+}
+
+.antique_art li:nth-child(3) {
+  display: none;
 }
 
 .antique_art img {
-  height: 500px;
+  height: 250px;
 }
 
 .contemporary_art {
-  margin: 0 auto;
-  width: 1300px;
+  float: left;
+  margin: 0;
+  width: 50%;
 }
 
 .contemporary_art h2 {
   float: left;
   clear: left;
   padding-top: 60px;
+  margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .contemporary_art a {
-  float: right;
+  display: none;
+  float: left;
   padding-top: 60px;
   font-size: 20px;
   font-weight: bold;
@@ -226,20 +265,28 @@
 
 .contemporary_art ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 40px;
-  width: 1300px;
+  width: 100%;
+}
+
+.contemporary_art li:nth-child(2) {
+  display: none;
+}
+
+.contemporary_art li:nth-child(3) {
+  display: none;
 }
 
 .contemporary_art img {
-  height: 500px;
+  height: 250px;
 }
 
 /* 베너 영역 */
 
 #benner {
   width: 100%;
-  height: 350px;
+  height: 200px;
   margin-top: 100px;
 }
 
@@ -248,6 +295,7 @@
 }
 
 .benner_btns {
+  display: none;
   margin: 0 auto;
   padding-top: 50px;
   width: 180px;
@@ -270,54 +318,54 @@
 #con_b {
   margin: 0 auto;
   margin-top: 50px;
-  width: 1500px;
-  height: 500px;
+  width: 100%;
+  height: 300px;
 }
 
 #program {
   float: left;
-  width: 700px;
+  width: 45%;
 }
 
 #program h1 {
   float: left;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 #program a {
   float: right;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 #program img {
-  width: 700px;
+  width: 100%;
   margin-top: 30px;
 }
 
 #program p {
   float: left;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 #notice {
-  float: left;
-  width: 700px;
-  margin-left: 100px;
+  float: right;
+  width: 45%;
+  margin: 0px;
 }
 
 #notice h1 {
   float: left;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 #notice a {
   float: right;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -330,7 +378,7 @@
 #notice li {
   margin-top: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #notice li:first-child {
@@ -338,28 +386,32 @@
 }
 
 #map {
-  width: 1500px;
-  height: 700px;
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 0px;
 }
 
 #road {
   float: left;
-  width: 700px;
-  height: 600px;
+  width: 100%;
+  height: 500px;
+  text-align: center;
 }
 
 #road h1 {
-  font-size: 30px;
+  font-size: 6vw;
   font-weight: bold;
 }
 
 #road iframe {
+  width: 400px;
+  height: 300px;
   margin-top: 50px;
 }
 
 #in_map {
+  display: none;
   float: left;
   width: 700px;
   height: 600px;
@@ -385,7 +437,7 @@
 }
 
 #footer_in {
-  width: 1700px;
+  width: 100%;
   height: 250px;
   margin: 0 auto;
 }
@@ -393,6 +445,7 @@
 #footer .logo {
   float: left;
   padding-top: 100px;
+  margin-left: 20px;
 }
 
 #footer .logo h1 {
@@ -403,12 +456,14 @@
 
 #footer .adress {
   float: left;
-  width: 400px;
-  padding-left: 50px;
+  width: 300px;
+  padding-left: 30px;
+  margin-top: 40px;
+  font-size: 12px;
 }
 
 #footer .adress li {
-  margin-top: 6%;
+  margin-top: 5%;
   color: #999;
   font-weight: bold;
 }
@@ -418,8 +473,9 @@
 }
 
 #footer .q_mn {
+  display: none;
   float: left;
-  margin: 20px 0 0 400px;
+  margin: 0;
   width: 410px;
   height: 170px;
 }
@@ -472,19 +528,21 @@
 }
 
 #footer .copy {
-  float: left;
-  margin-left: 400px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #footer .copy p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: #999;
 }
 
 #footer .family {
+  display: none;
   float: right;
-  display: table;
   width: 200px;
   height: 40px;
   text-align: center;
