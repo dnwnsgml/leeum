@@ -156,21 +156,6 @@
   font-weight: bold;
 }
 
-#content .poster_btns {
-  display: none;
-  margin: 0 auto;
-  padding-top: 100px;
-  width: 180px;
-}
-
-#content .poster_btns li {
-  width: 20px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 #content .pos_see {
   float: right;
   position: relative;
