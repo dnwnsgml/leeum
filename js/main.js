@@ -1,12 +1,26 @@
+// 헤더 슬라이드
+$(document).ready(function () {
+  // $(".sub").hide();
+
+  $("#header_in .nav")
+    .eq(0)
+    .hover(
+      function () {
+        $(this).find(".sub").slideDown(700);
+      },
+      function () {
+        $(this).find(".sub").slideUp(700);
+      }
+    );
+});
+
 // 베너부분 슬라이드
 
 $(document).ready(function () {
-  var current = 0; //초기에 보이는 메인이미지 인덱스값
+  var current = 0;
   var setIntervalId;
   $(".benner_btns li").eq(current).addClass("on");
 
-  //$('.btns').click(function () { })
-  //$('.btns').on('click', function () { });
   $(".benner_btns li").on({
     click: function () {
       var tg = $(this);
@@ -32,17 +46,8 @@ $(document).ready(function () {
 
   timer();
   function timer() {
-    //setInterval():함수를 정해놓은 시간마다 반복적으로 실행하는 메소드
-    //setInterval()함수를 멈추게하는 메소드는 clearInterval(반복실행함수의 객체명)
-    //var setIntervalId = setInterval(function () { }, 3000);
-    //clearInterval(setIntervalId)
-
-    //정해진 시간에 한번 실행
-    //var stopFunc = setTimeout(함수명(), 시간);
-    //clearTimeout(stopFunc); setTimeout()함수를 실행중지
-
     setIntervalId = setInterval(function () {
-      var n = current + 1; //0 1 2
+      var n = current + 1;
       if (n == 3) {
         n = 0;
       }
@@ -54,9 +59,7 @@ $(document).ready(function () {
 
   function movie(i) {
     if (current == i) return;
-    //현재보이는이미지와 다음에 보이는 이미지가 같다면 애니메이션 중지
 
-    //변수를 선언
     var currentEl = $(".benner_area > ul > li").eq(current);
     var nextEl = $(".benner_area > ul > li").eq(i);
 
