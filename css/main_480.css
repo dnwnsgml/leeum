@@ -49,6 +49,7 @@
 }
 
 #header_in .info {
+  display: none;
   position: absolute;
   left: 65%;
   top: 5%;
@@ -81,13 +82,13 @@
 /* 메인 */
 #main {
   width: 100%;
-  height: 400px;
+  height: 350px;
   padding: 0;
 }
 
 #main_img {
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 
 #main_img img {
@@ -136,10 +137,14 @@
 /* 콘텐츠 */
 #content {
   width: 100%;
-  height: 2200px;
+  height: 2100px;
 }
 
 /* 전시 영역 */
+
+#content .poster {
+  margin-top: 0;
+}
 
 #content .poster ul {
   display: flex;
@@ -178,8 +183,8 @@
 
 #collection {
   width: 100%;
-  height: 500px;
-  margin-top: 150px;
+  height: 450px;
+  margin-top: 100px;
 }
 
 #collection h1 {
@@ -198,7 +203,7 @@
 .antique_art h2 {
   float: left;
   clear: left;
-  padding-top: 60px;
+  padding-top: 30px;
   margin-left: 30px;
   font-size: 4.1vw;
   font-weight: bold;
@@ -207,7 +212,7 @@
 .antique_art a {
   display: none;
   float: left;
-  padding-top: 60px;
+  padding-top: 30px;
   font-size: 4.1vw;
   font-weight: bold;
 }
@@ -215,7 +220,7 @@
 .antique_art ul {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -240,7 +245,7 @@
 .contemporary_art h2 {
   float: left;
   clear: left;
-  padding-top: 60px;
+  padding-top: 30px;
   margin-left: 30px;
   font-size: 20px;
   font-weight: bold;
@@ -249,7 +254,7 @@
 .contemporary_art a {
   display: none;
   float: left;
-  padding-top: 60px;
+  padding-top: 30px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -257,7 +262,7 @@
 .contemporary_art ul {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -334,6 +339,7 @@
 #program {
   float: left;
   width: 45%;
+  padding-left: 15px;
 }
 
 #program h1 {
@@ -364,6 +370,7 @@
   float: right;
   width: 45%;
   margin: 0px;
+  padding-right: 15px;
 }
 
 #notice h1 {
