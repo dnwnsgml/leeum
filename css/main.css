@@ -48,16 +48,21 @@
 #header_in .nav .sub {
   display: block;
   position: absolute;
-  width: 180px;
+  left: -50px;
+  width: 170px;
   height: 170px;
   margin-top: 30px;
+  overflow: inherit;
   background-color: #fff;
 }
 
 #header_in .sub li {
   float: left;
+  position: relative;
+  left: 50px;
   width: 115px;
   height: 40px;
+  z-index: 999;
 }
 
 #header_in .info {
@@ -65,6 +70,7 @@
   width: 170px;
   margin-right: 20px;
 }
+
 #header_in .info ul {
   height: 100px;
   display: flex;
@@ -101,8 +107,7 @@
   overflow: hidden;
 }
 
-#main_img ul {
-}
+#main_img ul {}
 
 #main_img li {
   width: 100%;
@@ -138,15 +143,18 @@
 #main .main_info img {
   vertical-align: top;
 }
+
 #main .sns {
   float: right;
   margin: 100px 260px 0 0;
   width: 100px;
 }
+
 #main .sns img {
   width: 40px;
   height: 40px;
 }
+
 #main .sns ul {
   display: flex;
   justify-content: space-between;
@@ -167,6 +175,10 @@
 #content .poster ul {
   display: flex;
   justify-content: space-evenly;
+}
+
+#content .poster a {
+  transition: all 1s;
 }
 
 #content .poster img {
@@ -234,6 +246,11 @@
   width: 1300px;
 }
 
+.antique_art li {
+  cursor: pointer;
+  transition: all 1s;
+}
+
 .antique_art img {
   height: 500px;
 }
@@ -263,6 +280,11 @@
   justify-content: space-between;
   padding-top: 40px;
   width: 1300px;
+}
+
+.contemporary_art li {
+  cursor: pointer;
+  transition: all 1s;
 }
 
 .contemporary_art img {

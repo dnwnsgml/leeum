@@ -13,8 +13,28 @@ $(document).ready(function () {
       }
     );
 
-  // 슬라이드 베너
 
+  //  포스터 효과
+  $('.poster li a').mouseover(function () {
+    $(this).css('opacity', '0.4');
+  })
+
+  $('.poster li a').mouseout(function () {
+    $(this).css('opacity', '1');
+  })
+
+  // 소장품 효과
+  $('#collection li').mouseover(function () {
+    $(this).css('opacity', '0.4');
+  })
+
+  $('#collection li').mouseout(function () {
+    $(this).css('opacity', '1');
+  })
+
+
+
+  // 슬라이드 베너
   var current = 0;
   var setIntervalId;
   $(".benner_btns li").eq(current).addClass("on");
