@@ -17,7 +17,7 @@ body {
 }
 
 #header_in {
-    width: 100%;
+    width: 80%;
     height: 100px;
     margin: 0 auto;
 }
@@ -30,7 +30,7 @@ body {
 #header_in .nav {
     float: left;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 15%;
     background-color: #fff;
 }
 
@@ -96,7 +96,7 @@ body {
 #header_in .info {
     float: right;
     width: 17%;
-    margin-right: 5%;
+    margin-right: 2%;
 }
 
 #header_in .info ul {
@@ -135,14 +135,14 @@ body {
 /* 메인 */
 #main {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     padding-top: 100px;
     position: relative;
 }
 
 #main_img {
-    width: 100%;
-    height: 700px;
+    width: 80%;
+    height: 800px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -171,17 +171,17 @@ body {
 
 #main .main_info {
     float: left;
-    width: 70%;
-    margin: 5px 0 0 50px;
+    width: 60%;
+    margin: 5px 0 0 110px;
 }
 
 #main .main_info ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #main .main_info li {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -190,20 +190,20 @@ body {
 }
 
 #main .main_info span {
-    font-size: 16px;
+    font-size: 18px;
     color: #929292;
     font-weight: bold;
 }
 
 #main .sns {
     float: left;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 180px;
     width: 10%;
 }
 
 #main .sns img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 #main .sns ul {
@@ -214,7 +214,7 @@ body {
 /* 콘텐츠 */
 #content {
     width: 100%;
-    height: 3200px;
+    height: 3700px;
 }
 
 /* 전시 영역 */
@@ -233,13 +233,13 @@ body {
 }
 
 #content .poster img {
-    height: 400px;
+    height: 500px;
 }
 
 #content .poster p {
     padding-top: 10px;
     line-height: 25px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -251,7 +251,7 @@ body {
     float: right;
     position: relative;
     top: 30px;
-    left: -40px;
+    left: -150px;
 }
 
 #content .pos_see a {
@@ -263,13 +263,13 @@ body {
 
 #collection {
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     margin: 0 auto;
     margin-top: 130px;
 }
 
 #collection h1 {
-    margin-left: 50px;
+    margin-left: 170px;
     font-size: 40px;
     font-weight: bold;
 }
@@ -282,7 +282,7 @@ body {
     float: left;
     clear: left;
     padding-top: 60px;
-    margin-left: 50px;
+    margin-left: 170px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -290,7 +290,7 @@ body {
 .antique_art a {
     float: right;
     padding-top: 60px;
-    margin-right: 50px;
+    margin-right: 170px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -308,7 +308,7 @@ body {
 }
 
 .antique_art img {
-    height: 350px;
+    height: 450px;
 }
 
 .contemporary_art {
@@ -319,7 +319,7 @@ body {
     float: left;
     clear: left;
     padding-top: 60px;
-    margin-left: 50px;
+    margin-left: 170px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -327,7 +327,7 @@ body {
 .contemporary_art a {
     float: right;
     padding-top: 60px;
-    margin-right: 50px;
+    margin-right: 170px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -345,7 +345,7 @@ body {
 }
 
 .contemporary_art img {
-    height: 350px;
+    height: 450px;
 }
 
 /* 베너 영역 */
@@ -416,23 +416,25 @@ body {
     margin: 0 auto;
     margin-top: 0px;
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 #program {
     float: left;
     width: 45%;
-    margin-left: 35px;
+    margin-left: 50px;
 }
 
 #program h1 {
     float: left;
+    margin-left: 100px;
     font-size: 25px;
     font-weight: bold;
 }
 
 #program a {
     float: right;
+    margin-right: 25px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -444,7 +446,7 @@ body {
 
 #program p {
     float: left;
-    margin-top: 10px;
+    margin: 10px 0 0 100px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -452,7 +454,7 @@ body {
 #notice {
     float: left;
     width: 45%;
-    margin-left: 35px;
+    margin-left: 70px;
 }
 
 #notice h1 {
@@ -463,6 +465,7 @@ body {
 
 #notice a {
     float: right;
+    margin-right: 100px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -492,9 +495,9 @@ body {
 
 #road {
     float: left;
-    width: 45%;
-    height: 400px;
-    margin-left: 35px;
+    width: 43%;
+    height: 500px;
+    margin-left: 9%;
 }
 
 #road h1 {
@@ -503,16 +506,16 @@ body {
 }
 
 #road iframe {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     margin-top: 50px;
 }
 
 #in_map {
     float: left;
-    width: 45%;
-    height: 400px;
-    margin-left: 35px;
+    width: 40%;
+    height: 500px;
+    margin-left: 0;
 }
 
 #in_map h1 {
@@ -523,7 +526,7 @@ body {
 #in_map img {
     margin-top: 50px;
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 /* 하단 */
@@ -542,7 +545,7 @@ body {
 #footer .logo {
     float: left;
     padding-top: 100px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #footer .logo h1 {
@@ -553,15 +556,15 @@ body {
 
 #footer .adress {
     float: left;
-    width: 35%;
+    width: 45%;
     padding-left: 25px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #footer .adress li {
-    margin-top: 6%;
+    margin-top: 3.5%;
     color: #999;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -583,7 +586,7 @@ body {
 
 #footer .q_mn1 li {
     margin-top: 10%;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #999;
 }
@@ -599,7 +602,7 @@ body {
 
 #footer .q_mn2 li {
     margin-top: 10%;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #999;
 }
@@ -614,7 +617,7 @@ body {
 
 #footer .q_mn3 li {
     margin-top: 10%;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #999;
 }
@@ -625,11 +628,11 @@ body {
 
 #footer .copy {
     float: left;
-    margin-left: 350px;
+    margin-left: 0px;
 }
 
 #footer .copy p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #999;
 }
@@ -637,9 +640,9 @@ body {
 #footer .family {
     float: right;
     display: table;
-    width: 15%;
+    width: 10%;
     height: 30px;
-    margin: 0 20px 0 0;
+    margin: 0 40px 0 0;
     text-align: center;
     border: 1px solid #999;
 }
