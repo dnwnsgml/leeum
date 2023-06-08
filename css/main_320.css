@@ -343,6 +343,7 @@
 }
 
 #program h1 {
+    margin-left: 0;
     float: left;
     font-size: 16px;
     font-weight: bold;
@@ -365,7 +366,7 @@
 
 #program p {
     float: left;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     font-size: 10px;
     font-weight: bold;
 }
@@ -479,13 +480,13 @@
     float: left;
     width: 220px;
     padding-left: 15px;
-    margin-top: 40px;
-    font-size: 8px;
+    margin-top: 30px;
 }
 
 #footer .adress li {
     margin-top: 5%;
     color: #999;
+    font-size: 10px;
     font-weight: bold;
 }
 

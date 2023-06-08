@@ -166,7 +166,7 @@
 #content .poster p {
   padding-top: 10px;
   line-height: 25px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -189,7 +189,7 @@
 
 #collection h1 {
   margin-left: 30px;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: bold;
 }
 
@@ -340,9 +340,11 @@
   float: left;
   width: 45%;
   padding-left: 15px;
+  margin-left: 0;
 }
 
 #program h1 {
+  margin-left: 0;
   float: left;
   font-size: 20px;
   font-weight: bold;
@@ -360,8 +362,8 @@
 }
 
 #program p {
+  margin: 10px 0 0 0;
   float: left;
-  margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -380,6 +382,7 @@
 }
 
 #notice a {
+  margin-right: 0;
   float: right;
   font-size: 14px;
   font-weight: bold;
@@ -409,7 +412,7 @@
 }
 
 #road {
-  float: left;
+  margin-left: 0;
   width: 100%;
   height: 460px;
   text-align: center;
